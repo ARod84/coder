@@ -414,6 +414,36 @@ iframe {
     border-radius: 50%;
 }
 
+/*========================================================== ANIMACIONES ===================================================================*/
+
+/* Cajas home */
+.box {
+    transition: all 0.5s ease-out 0.1s;
+    cursor: pointer;
+    z-index: 666;
+}
+
+.box:hover {
+    transform: scale(1.2);
+    transform-origin: bottom left;
+    z-index: 999;
+}
+
+.overlay {
+    transition: background-image 1 ease-out 0.2s;
+}
+
+.box:hover > .overlay {
+    animation: gradiente 1s ease-in .5s infinite alternate;
+}
+
+@keyframes gradiente {
+    0%  {background-image: linear-gradient(to right, rgba(46, 42, 54, 0.25) , rgba( 255, 27, 138,0.25), rgba( 255, 27, 138,0.25), rgba( 255, 27, 138,0.35));}
+    25%  {background-image: linear-gradient(to top, rgba(46, 42, 54, 0.15) , rgba( 255, 27, 138,0.25), rgba( 255, 27, 138,0.25), rgba( 255, 27, 138,0.35));}
+    50%  {background-image: linear-gradient(to left, rgba( 255, 27, 138,0.25) , rgba( 255, 27, 138,0.25), rgba( 255, 27, 138,0.25), rgba( 255, 27, 138,0.35));}
+    75%  {background-image: linear-gradient(to bottom, rgba( 255, 27, 138,0.25) , rgba( 255, 27, 138,0.25), rgba( 255, 27, 138,0.25), rgba( 255, 27, 138,0.35));}
+    100% {background-image: linear-gradient(to right, rgba( 255, 27, 138,0.35) , rgba( 255, 27, 138,0.25), rgba( 255, 27, 138,0.25), rgba( 0, 0, 0, 0.25));}
+  }
 /* Responsive */
 
 @media only screen and (max-width: 1024px) {
