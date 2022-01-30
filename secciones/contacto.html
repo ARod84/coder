@@ -6,6 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Contacto</title>
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
     <link rel="stylesheet" href="../style.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -16,9 +17,9 @@
     <!-- Inicio de header -->
     <!---------------------->
     <header>
-        <nav class="navHeader">
+        <nav class="navbar navbar-expand-lg navbar-dark bg-dark border-bottom border-light px-5">
             <div class="logo">
-                <a href="../index.html">
+                <a href="../index.html" class="navbar-brand mr-5">
                     <svg
                         xmlns:dc="http://purl.org/dc/elements/1.1/"
                         xmlns:cc="http://creativecommons.org/ns#"
@@ -41,28 +42,32 @@
                     AROD BLOG
                 </a>
             </div>
-            <ul class="headerLinks">
-                <li>
-                    <a href="vainillawp.html">
-                        Vainilla WP
-                    </a>
-                </li>
-                <li>
-                    <a href="jamstackwp.html">
-                        En el Jamstack
-                    </a>
-                </li>
-                <li>
-                    <a href="descargas.html">
-                        Descargas
-                    </a>
-                </li>
-                <li>
-                    <a href="contacto.html">
-                        Contacto
-                    </a>
-                </li>
-            </ul>
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
+              <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse  justify-content-between" id="navbarNavAltMarkup">
+              <div class="navbar-nav">
+                <a href="./vainillawp.html" class="nav-item nav-link active">
+                    Vainilla WP
+                    <span class="sr-only">(current)</span>
+                </a>
+                <a class="nav-item nav-link" href="./jamstackwp.html">
+                    En el Jamstack
+                </a>
+                <a class="nav-item nav-link" href="./descargas.html">
+                    Descargas
+                </a>
+                <a class="nav-item nav-link" href="./contacto.html">
+                    Contacto
+                </a>
+              </div>
+              <div class="justify-content-end">
+                  <form class="form-inline">
+                      <input class="form-control mr-sm-2" type="search" placeholder="Buscar entrada" aria-label="Search">
+                      <button class="btn btn-outline-success mx-1 my-2 my-sm-0" type="submit">Buscar</button>
+                  </form>
+              </div>
+            </div>
         </nav>
     </header>
     <!---------------->
@@ -102,9 +107,9 @@
     <!---------------------->
     <!-- Inicio de footer -->
     <!---------------------->
-    <footer>
-        <div class="innerFooter">
-            <div class="footerLogo">
+    <footer class="col-md-12 border-top border-light">
+        <div class="row align-items-center px-5">
+            <div class="footerLogo col-md-4">
                 <a href="../index.html">
                     <svg
                         xmlns:dc="http://purl.org/dc/elements/1.1/"
@@ -127,56 +132,52 @@
                     </svg>
                 </a>
             </div>
-            <div class="footer-nav">
-                <ul>
-                    <li>
-                        <a href="vainillawp.html">
-                            Vainilla WP
-                        </a>
-                    </li>
-                    <li>
-                        <a href="jamstackwp.html">
-                            En el Jamstack
-                        </a>
-                    </li>
-                    <li>
-                        <a href="descargas.html">
-                            Descargas
-                        </a>
-                    </li>
-                    <li>
-                        <a href="contacto.html">
-                            Contacto
-                        </a>
-                    </li>
-                </ul>
-            </div>
-            <div class="enlaces">
+            <ul class="footer-nav col-md-4">
+                <li>
+                    <a href="./vainillawp.html">
+                        Vainilla WP
+                    </a>
+                </li>
+                <li>
+                    <a href="./jamstackwp.html">
+                        En el Jamstack
+                    </a>
+                </li>
+                <li>
+                    <a href="./descargas.html">
+                        Descargas
+                    </a>
+                </li>
+                <li>
+                    <a href="./contacto.html">
+                        Contacto
+                    </a>
+                </li>
+            </ul>
+            <ul class="enlaces col-md-4">
                 <!-- En desarrollo -->
-                <ul>
-                    <li>
-                        <a href="#">
-                            Política de privacidad
-                        </a>
-                    </li>
-                    <li>
-                        <a href="#">
-                            Términos y condiciones
-                        </a>
-                    </li>
-                    <li>
-                        <a href="#">
-                            Política de cookies
-                        </a>
-                    </li>
-                </ul>
-            </div>
+                <li>
+                    <a href="#">
+                        Política de privacidad
+                    </a>
+                </li>
+                <li>
+                    <a href="#">
+                        Términos y condiciones
+                    </a>
+                </li>
+                <li>
+                    <a href="#">
+                        Política de cookies
+                    </a>
+                </li>
+            </ul>
+            
         </div>
     </footer>
     <!---------------->
     <!-- Fin Footer -->
     <!---------------->
-
     <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>

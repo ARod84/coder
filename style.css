@@ -137,19 +137,6 @@ h2 {
     padding: 5vh 0 5vh 0;
 }
 
-.container {
-    margin: 50px auto;
-    padding: 1rem 12rem 1rem 12rem;
-    display: grid;
-    grid-template-columns: 66% 33%;
-    grid-template-rows: 50% 50%;
-    grid-template-areas: 
-                        "vainillawp plugins"
-                        "jamstackwp meme";
-    column-gap: 20px;
-    row-gap: 50px;
-}
-
 .box-large {
     display: flex;
     flex-wrap: wrap;
@@ -219,19 +206,9 @@ h2 {
 }
 
 /* Footer */
-
-.innerFooter {
-    border-top: 2px solid #eee;
-    width: 100%;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-}
-
 .footerLogo svg {
     max-height: 150px;
     fill: #ffffff;
-    margin-left: 6rem;
 }
 
 small {
@@ -243,7 +220,6 @@ small {
     line-height: 24px;
     font-weight: 700;
     cursor: not-allowed;
-    margin-right: 6rem;
 }
 
 .footer-nav a {
