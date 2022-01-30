@@ -279,28 +279,6 @@ label {
     margin-bottom: 10px;
 } 
 
-input[type="text"],
-input[type="submit"],
-input[type="email"] {
-    width: 700px;
-    height: 40px;
-    margin: 10px 0 10px 0;
-}
-
-textarea {
-    width: 700px;
-    margin: 10px 0 10px 0;
-}
-
-input[type="submit"] {
-    background: #222222;
-    color: #ffffff;
-    cursor: pointer;
-    border: none;
-    font-size: 14px;
-    font-weight: 700;
-}
-
 /* Categoría page */
 
 .container-page {
