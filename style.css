@@ -1,0 +1,550 @@
+/* CSS AROD.com */
+
+/* RESET */
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+
+body {
+	line-height: 1;
+    font-size: 16px;
+}
+
+ol, ul {
+	list-style: none;
+}
+
+blockquote, q {
+	quotes: none;
+}
+
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+
+/* Estilos generales */
+
+p,
+a,
+li,
+div,
+span,
+body {
+    font-family: 'Lato', sans-serif;
+    color: #ffffff;
+}
+
+h1, h2, h3,
+h4, h5, h6 {
+    font-family: 'Bakbak One', sans-serif;
+    color: #ffffff;
+}
+
+a,
+a:link,
+a:visited,
+a:active {
+    text-decoration: none;
+}
+
+body {
+    background-color: #2E2A36;
+}
+
+/* Header */
+.navHeader {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    list-style: none;
+    padding: 1rem 6rem 1rem 6rem;
+    border-bottom: 2px solid #eee;
+}
+
+.headerLinks {
+    display: flex;
+    justify-content: space-between;
+}
+
+.headerLinks li:not(last-child) {
+    padding-right: 2.5rem;
+}
+
+.logo svg {
+    max-height: 60px;
+    width: auto;
+    vertical-align: middle;
+}
+
+.logo path {
+    fill: #ffffff;
+}
+
+.nav-header a {
+    color: #ffffff;
+}
+
+.nav-header li {
+    font-weight: 900;
+    color: #ffffff;
+}
+
+/* Main */
+
+h1 {
+    font-size: 3rem;
+    margin-bottom: 1.25rem;
+}
+
+h2 {
+    font-size: 2rem;
+    margin-bottom: 1.25rem;
+}
+
+/*.vainillawp {
+    grid-area: vainillawp;
+}
+
+.plugins {
+    grid-area: plugins;
+}
+
+.jamstackwp {
+    grid-area: jamstackwp;
+}
+
+.meme {
+    grid-area: meme;
+}*/
+
+.main-section {
+    max-width: 90%;
+    padding: 5vh 0 5vh 0;
+}
+
+.box-large {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: flex-start;
+    margin-bottom: 10px;
+}
+
+.box {
+    margin-right: 10px;
+    padding: 10px 20px 20px 0;
+}
+
+.box-medium {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: flex-start;
+    margin-bottom: 20px;
+}
+
+.btn {
+    margin: 20px auto 20px 150px;
+    text-align: center;
+    border: none;
+    border-radius: 5px;
+    background: #222222;
+    padding: 10px 30px 10px 30px;
+    color: #ffffff;
+    height: 50px;
+    align-self: center;
+}
+
+.btn a {
+    color: #ffffff;
+    font-size: 16px; 
+}
+
+/* Cajas home */
+
+.box {
+    position: relative;
+}
+
+.boxHomeImg {
+    width: 400px;
+    height: 200px;
+    object-fit: cover;
+    border-radius: 8px;
+}
+
+.overlay {
+    position: absolute;
+    background: linear-gradient(to right, rgba( 0, 0, 0, 0.8) , rgba( 255, 27, 138,0.25));
+    width: 400px;
+    height: 200px;
+    border-radius: 8px;
+}
+
+.boxTitle {
+    font-size: 21px;
+    margin-top: 20px;
+    margin-left: 10px;
+}
+
+.memeImg {
+    width: 400px;
+    height: auto;
+}
+
+/* Footer */
+
+.innerFooter {
+    border-top: 2px solid #eee;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.footerLogo svg {
+    max-height: 150px;
+    fill: #ffffff;
+    margin-left: 6rem;
+}
+
+small {
+    text-align: center;
+}
+
+.enlaces a {
+    color: #aaa;
+    line-height: 24px;
+    font-weight: 700;
+    cursor: not-allowed;
+    margin-right: 6rem;
+}
+
+.footer-nav a {
+    color: #ffffff;
+    line-height: 24px;
+    font-weight: 700;
+}
+
+/* Contacto */
+
+.container-contacto {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 80vh;
+}
+
+.contacto {
+    display: block;
+    margin: 0 auto;
+    text-align: center;
+}
+
+form {
+    max-width: 750px;
+    display: block;
+    padding: 20px;
+    text-align: left;
+    margin: auto;
+}
+
+label {
+    margin-bottom: 10px;
+} 
+
+/* Categoría page */
+
+.container-page {
+    display: grid;
+    grid-template-columns: 10% 80% 10%;
+    grid-template-rows: 10vh 80% 10vh;
+}
+
+.page {
+    grid-row: 2 / 3;
+    grid-column: 2 / 3;
+}
+
+.page h1 {
+    margin-bottom: 20px;
+}
+
+.content-box {
+    display: flex;
+    justify-content: space-between;
+}
+
+.img-box {
+    max-width: 500px;
+}
+
+.img-box img {
+    width: 250px;
+    height: auto;
+}
+
+.img-box h3 {
+    margin-top: 10px;
+}
+
+.disabled {
+    opacity: 0.5;
+    cursor: not-allowed;
+}
+
+.descargas {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.img-box a {
+    color: #222222;
+}
+
+/* Article */
+.container-article {
+    display: grid;
+    grid-template-columns: 20% 60% 20%;
+    grid-template-rows: 15vh 80% 15vh;
+}
+
+.article {
+    grid-row: 2 / 3;
+    grid-column: 2 / 3;
+}
+
+.article h1 {
+    font-size: 48px;
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.article p {
+    margin-bottom: 20px;
+}
+
+.article img {
+    width: 750px;
+    height: auto;
+    margin: 0 auto 20px auto;
+    text-align: center;
+    display: block;
+}
+
+iframe {
+    margin: 40px 0 40px 0;
+}
+
+.author {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    width: 25%;
+}
+
+.author span {
+    margin: 0 5px 0 5px;
+}
+
+.author img {
+    width: 50px;
+    height: auto;
+    border-radius: 50%;
+}
+
+/*========================================================== ANIMACIONES ===================================================================*/
+
+/* Cajas home */
+.box {
+    transition: all 0.5s ease-out 0.1s;
+    cursor: pointer;
+    z-index: 666;
+}
+
+.box:hover {
+    transform: scale(1.2);
+    transform-origin: bottom left;
+    z-index: 999;
+}
+
+.overlay {
+    transition: background-image 1 ease-out 0.2s;
+}
+
+.box:hover > .overlay {
+    animation: gradiente 1s ease-in .5s infinite alternate;
+}
+
+@keyframes gradiente {
+    0%  {background-image: linear-gradient(to right, rgba(46, 42, 54, 0.25) , rgba( 255, 27, 138,0.25), rgba( 255, 27, 138,0.25), rgba( 255, 27, 138,0.35));}
+    25%  {background-image: linear-gradient(to top, rgba(46, 42, 54, 0.15) , rgba( 255, 27, 138,0.25), rgba( 255, 27, 138,0.25), rgba( 255, 27, 138,0.35));}
+    50%  {background-image: linear-gradient(to left, rgba( 255, 27, 138,0.25) , rgba( 255, 27, 138,0.25), rgba( 255, 27, 138,0.25), rgba( 255, 27, 138,0.35));}
+    75%  {background-image: linear-gradient(to bottom, rgba( 255, 27, 138,0.25) , rgba( 255, 27, 138,0.25), rgba( 255, 27, 138,0.25), rgba( 255, 27, 138,0.35));}
+    100% {background-image: linear-gradient(to right, rgba( 255, 27, 138,0.35) , rgba( 255, 27, 138,0.25), rgba( 255, 27, 138,0.25), rgba( 0, 0, 0, 0.25));}
+  }
+/* Responsive */
+
+@media only screen and (max-width: 1024px) {
+    /* Estilos generales */
+    body {
+        font-size: 14px;
+    }
+    /*Grilla index*/
+    .container {
+        margin: 20px auto;
+        padding: .5rem 5rem .5rem 5rem;
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        grid-template-rows: 1fr .5fr;
+        grid-template-areas: 
+                            "vainillawp jamstackwp"
+                            "plugins meme";
+        column-gap: 10px;
+        row-gap: 20px;
+        justify-items:center;
+        justify-content: center;
+    }
+
+    /*Cajas Home*/
+    .boxHomeImg {
+        width: 300px;
+        height: 150px;
+        object-fit: cover;
+    }
+    
+    .overlay {
+        width: 300px;
+        height: 150px;
+    }
+
+    .btn {
+        margin: 20px auto;
+    }
+
+    .memeImg {
+        width: 300px;
+        height: auto;
+    }
+
+    .box-large,
+    .box-medium {
+        justify-content: center;
+    }
+}
+
+@media only screen and (max-width: 768px) {
+    /* Estilos generales */
+    body {
+        font-size: 12px;
+    }
+    /* Header */
+    .navHeader {
+        padding: 1rem 2rem 1rem 2rem;
+    }
+    
+    .logo {
+        display: none;
+    }
+
+    .headerLinks li:not(last-child) {
+        padding-right: 1rem;
+    }
+    /* Grilla index */
+    .container {
+        padding: .5rem 5rem .5rem 5rem;
+        display: grid;
+        grid-template-columns: 1fr;
+        grid-template-rows: auto;
+        grid-template-areas: 
+                            "vainillawp"
+                            "jamstackwp"
+                            "plugins"
+                            "meme";
+        row-gap: 10px;
+        justify-items:center;
+        justify-content: center;
+    }
+    /* Cajas home */
+    .boxHomeImg {
+        width: 300px;
+        height: 150px;
+        object-fit: cover;
+    }
+    
+    .overlay {
+        width: 300px;
+        height: 150px;
+    }
+
+    .btn {
+        margin: 20px auto;
+    }
+
+    .memeImg {
+        width: 300px;
+        height: auto;
+    }
+
+    .box-large,
+    .box-medium {
+        justify-content: center;
+    }
+    /* Footer */
+    .innerFooter {
+        flex-direction: column;
+        justify-content: center;
+        align-items: flex-start;
+        padding: 1rem;
+    }
+    
+    .footerLogo {
+        width: 100%;
+    }
+
+    .footerLogo svg {
+        max-height: 100px;
+        margin: 1vh 30vw;
+    }
+
+    .enlaces,
+    .footer-nav {
+        width: 100%;
+        text-align: center;
+    }
+
+    .enlaces a {
+        margin-right: 0;
+    }
+}
