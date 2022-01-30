@@ -132,25 +132,22 @@ h2 {
     margin-bottom: 1.25rem;
 }
 
-/*.vainillawp {
-    grid-area: vainillawp;
-}
-
-.plugins {
-    grid-area: plugins;
-}
-
-.jamstackwp {
-    grid-area: jamstackwp;
-}
-
-.meme {
-    grid-area: meme;
-}*/
-
 .main-section {
     max-width: 90%;
     padding: 5vh 0 5vh 0;
+}
+
+.container {
+    margin: 50px auto;
+    padding: 1rem 12rem 1rem 12rem;
+    display: grid;
+    grid-template-columns: 66% 33%;
+    grid-template-rows: 50% 50%;
+    grid-template-areas: 
+                        "vainillawp plugins"
+                        "jamstackwp meme";
+    column-gap: 20px;
+    row-gap: 50px;
 }
 
 .box-large {
@@ -281,6 +278,28 @@ form {
 label {
     margin-bottom: 10px;
 } 
+
+input[type="text"],
+input[type="submit"],
+input[type="email"] {
+    width: 700px;
+    height: 40px;
+    margin: 10px 0 10px 0;
+}
+
+textarea {
+    width: 700px;
+    margin: 10px 0 10px 0;
+}
+
+input[type="submit"] {
+    background: #222222;
+    color: #ffffff;
+    cursor: pointer;
+    border: none;
+    font-size: 14px;
+    font-weight: 700;
+}
 
 /* Categoría page */
 
