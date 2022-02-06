@@ -133,8 +133,7 @@ h2 {
 }
 
 .main-section {
-    max-width: 90%;
-    padding: 5vh 0 5vh 0;
+    max-width: 80%;
 }
 
 .box-large {
@@ -205,9 +204,65 @@ h2 {
     height: auto;
 }
 
+/* Page wp vainilla */
+.carousel-indicators.outside {
+    bottom: -2rem;
+}
+
+/* Vertical carousel */
+
+.carousel-control-prev.horizontal {
+    left: -100px;
+}
+
+.carousel-control-next.horizontal {
+    right: -100px;
+}
+
+.carousel-control-prev.vertical  {
+    position: absolute;
+    top: 0;
+    bottom: 2rem;
+    left: -1rem;
+    transform: rotate(90deg);
+}
+
+.carousel-control-next.vertical  {
+    position: absolute;
+    top: 2rem;
+    bottom: 0;
+    left: -1rem;
+    transform: rotate(90deg);
+}
+
+.vertical-out .carousel-item-next.carousel-item-left,
+.vertical-out .carousel-item-prev.carousel-item-right {
+    -webkit-transform: translate3d(0, 0, 0);
+            transform: translate3d(0, 0, 0);
+}
+
+.vertical-out .carousel-item-next,
+.vertical-out .active.carousel-item-right {
+    -webkit-transform: translate3d(0, 100%, 0);
+            transform: translate3d(0, 100% 0);
+}
+
+.vertical-out .carousel-item-prev,
+.vertical-out .active.carousel-item-left {
+-webkit-transform: translate3d(0,-100%, 0);
+        transform: translate3d(0,-100%, 0);
+}
+
+/* Main-bottom */
+.main-bottom {
+    margin-top: 2.5rem;
+    display: grid;
+    grid-template-columns: 21.6% 78.4%;
+}
+
 /* Footer */
 .footerLogo svg {
-    max-height: 150px;
+    max-height: 120px;
     fill: #ffffff;
 }
 
@@ -435,6 +490,19 @@ iframe {
     .box-medium {
         justify-content: center;
     }
+    /*Page*/
+    .page h1 {
+        font-size: 2rem;
+    }
+
+    .page h2 {
+        font-size: 1.5rem;
+    }
+
+    .page h3 {
+        font-size: .7rem;
+    }
+
 }
 
 @media only screen and (max-width: 768px) {
@@ -494,6 +562,16 @@ iframe {
     .box-medium {
         justify-content: center;
     }
+    /* Grilla pages */
+    .container-page {
+        display: grid;
+        grid-template-columns: 5% 90% 5%;
+        grid-template-rows: 5vh 90% 5vh;
+    }
+
+    .no-mobile{
+        display: none;
+    }
     /* Footer */
     .innerFooter {
         flex-direction: column;
@@ -508,7 +586,7 @@ iframe {
 
     .footerLogo svg {
         max-height: 100px;
-        margin: 1vh 30vw;
+        margin: 1rem auto;
     }
 
     .enlaces,
@@ -520,4 +598,36 @@ iframe {
     .enlaces a {
         margin-right: 0;
     }
+
+    /* Page wp vainilla */
+    .carousel-control-prev.horizontal {
+        left: -1rem;
+    }
+    
+    .carousel-control-next.horizontal {
+        right: -1rem;
+    }
+    
+    .carousel-control-prev.vertical  {
+        position: absolute;
+        top: 0;
+        bottom: 2rem;
+        left: -1rem;
+        transform: rotate(90deg);
+    }
+    
+    .carousel-control-next.vertical  {
+        position: absolute;
+        top: 2rem;
+        bottom: 0;
+        left: -1rem;
+        transform: rotate(90deg);
+    }   
+    /* Main-bottom */
+    .main-bottom {
+        margin-top: 2.5rem;
+        display: grid;
+        grid-template-columns: 100%;
+        grid-template-rows: .5fr auto;
+    } 
 }
