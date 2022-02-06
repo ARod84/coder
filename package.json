@@ -1,0 +1,15 @@
+{
+  "devDependencies": {
+    "node-sass": "^7.0.1",
+    "nodemon": "^2.0.15"
+  },
+  "liveServer.settings.donotShowInfoMsg": true,
+    "editor.minimap.enabled": false,
+    "liveSassCompile.settings.formats": [
+        {
+            "format": "expanded",
+            "extensionName": ".css",
+            "savePath": "./estilos"
+        }
+    ]
+}
