@@ -52,6 +52,34 @@ table {
 	border-spacing: 0;
 }
 
+/* Variables */
+
+$fontTitle: 'Bakbak One', sans-serif;
+$fontSubtitle: 'Lato', sans-serif;
+
+$bold: 700;
+$extraBold: 900;
+
+/* Map */
+$redes: (
+    facebook: #ffffff,
+    twitter: #eeeeee,
+    instagram: #dddddd,
+    linkedin: #cccccc
+); 
+
+@each $red, $color in $redes {
+    .btn--#{$red} {
+        fill: $color;
+    }
+}
+
+/* Mixins */
+@mixin sizes($width, $height) {
+    height: $height;
+    width: $width;
+}
+
 /* Estilos generales */
 
 p,
@@ -64,9 +92,14 @@ body {
     color: #ffffff;
 }
 
-h1, h2, h3,
-h4, h5, h6 {
-    font-family: 'Bakbak One', sans-serif;
+h1, h4, h5, h6 {
+    font-family: $fontTitle;
+    color: #ffffff;
+}
+
+h2, h3 {
+    font-family: $fontSubtitle;
+    font-weight: $extraBold;
     color: #ffffff;
 }
 
@@ -179,8 +212,7 @@ h2 {
 }
 
 .boxHomeImg {
-    width: 400px;
-    height: 200px;
+    @include sizes( 400px, 200px);
     object-fit: cover;
     border-radius: 8px;
 }
@@ -188,9 +220,13 @@ h2 {
 .overlay {
     position: absolute;
     background: linear-gradient(to right, rgba( 0, 0, 0, 0.8) , rgba( 255, 27, 138,0.25));
-    width: 400px;
-    height: 200px;
+    @include sizes( 400px, 200px);
     border-radius: 8px;
+}
+
+.overlay--featured {
+   @extend .overlay;
+   background: linear-gradient(to right, rgba( 0, 0, 0, 0.8) , rgba( 3, 222, 255, 0.55));
 }
 
 .boxTitle {
@@ -283,12 +319,17 @@ small {
     font-weight: 700;
 }
 
+.redes li svg {
+    max-width: 50px;
+}
+
 /* Contacto */
 
 .container-contacto {
     display: flex;
     justify-content: center;
     align-items: center;
+    height: 80vh;
 }
 
 .contacto {
@@ -453,13 +494,26 @@ label {
     animation: gradiente 1s ease-in .5s infinite alternate;
 }
 
+.box:hover > .overlay--featured {
+    animation: gradiente--dos 1s ease-in .5s infinite alternate;
+}
+
 @keyframes gradiente {
     0%  {background-image: linear-gradient(to right, rgba(46, 42, 54, 0.25) , rgba( 255, 27, 138,0.25), rgba( 255, 27, 138,0.25), rgba( 255, 27, 138,0.35));}
     25%  {background-image: linear-gradient(to top, rgba(46, 42, 54, 0.15) , rgba( 255, 27, 138,0.25), rgba( 255, 27, 138,0.25), rgba( 255, 27, 138,0.35));}
     50%  {background-image: linear-gradient(to left, rgba( 255, 27, 138,0.25) , rgba( 255, 27, 138,0.25), rgba( 255, 27, 138,0.25), rgba( 255, 27, 138,0.35));}
     75%  {background-image: linear-gradient(to bottom, rgba( 255, 27, 138,0.25) , rgba( 255, 27, 138,0.25), rgba( 255, 27, 138,0.25), rgba( 255, 27, 138,0.35));}
     100% {background-image: linear-gradient(to right, rgba( 255, 27, 138,0.35) , rgba( 255, 27, 138,0.25), rgba( 255, 27, 138,0.25), rgba( 0, 0, 0, 0.25));}
-  }
+}
+
+@keyframes gradiente--dos {
+    0%  {background-image: linear-gradient(to right, rgba(46, 42, 54, 0.25), rgba( 3, 222, 255, 0.25), rgba( 3, 222, 255, 0.25), rgba( 3, 222, 255, 0.55));}
+    25%  {background-image: linear-gradient(to top, rgba(46, 42, 54, 0.15), rgba( 3, 222, 255, 0.25), rgba( 3, 222, 255, 0.25), rgba( 3, 222, 255, 0.55));}
+    50%  {background-image: linear-gradient(to left, rgba( 3, 222, 255, 0.25), rgba( 3, 222, 255, 0.25), rgba( 3, 222, 255, 0.35), rgba( 3, 222, 255, 0.55));}
+    75%  {background-image: linear-gradient(to bottom, rgba( 3, 222, 255, 0.25), rgba( 3, 222, 255, 0.35), rgba( 3, 222, 255, 0.55), rgba( 3, 222, 255, 0.35));}
+    100% {background-image: linear-gradient(to right, rgba( 3, 222, 255, 0.35), rgba( 3, 222, 255, 0.55), rgba( 3, 222, 255, 0.25), rgba( 0, 0, 0, 0.25));}
+}
+
 
 .mobile {
     display: none;

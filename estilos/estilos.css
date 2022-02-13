@@ -52,6 +52,25 @@ table {
   border-spacing: 0;
 }
 
+/* Variables */
+/* Map */
+.btn--facebook {
+  fill: #ffffff;
+}
+
+.btn--twitter {
+  fill: #eeeeee;
+}
+
+.btn--instagram {
+  fill: #dddddd;
+}
+
+.btn--linkedin {
+  fill: #cccccc;
+}
+
+/* Mixins */
 /* Estilos generales */
 p,
 a,
@@ -63,9 +82,14 @@ body {
   color: #ffffff;
 }
 
-h1, h2, h3,
-h4, h5, h6 {
-  font-family: 'Bakbak One', sans-serif;
+h1, h4, h5, h6 {
+  font-family: "Bakbak One", sans-serif;
+  color: #ffffff;
+}
+
+h2, h3 {
+  font-family: "Lato", sans-serif;
+  font-weight: 900;
   color: #ffffff;
 }
 
@@ -201,20 +225,25 @@ h2 {
 }
 
 .boxHomeImg {
-  width: 400px;
   height: 200px;
+  width: 400px;
   -o-object-fit: cover;
      object-fit: cover;
   border-radius: 8px;
 }
 
-.overlay {
+.overlay, .overlay--featured {
   position: absolute;
   background: -webkit-gradient(linear, left top, right top, from(rgba(0, 0, 0, 0.8)), to(rgba(255, 27, 138, 0.25)));
   background: linear-gradient(to right, rgba(0, 0, 0, 0.8), rgba(255, 27, 138, 0.25));
-  width: 400px;
   height: 200px;
+  width: 400px;
   border-radius: 8px;
+}
+
+.overlay--featured {
+  background: -webkit-gradient(linear, left top, right top, from(rgba(0, 0, 0, 0.8)), to(rgba(3, 222, 255, 0.55)));
+  background: linear-gradient(to right, rgba(0, 0, 0, 0.8), rgba(3, 222, 255, 0.55));
 }
 
 .boxTitle {
@@ -310,6 +339,10 @@ small {
   font-weight: 700;
 }
 
+.redes li svg {
+  max-width: 50px;
+}
+
 /* Contacto */
 .container-contacto {
   display: -webkit-box;
@@ -321,6 +354,7 @@ small {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
+  height: 80vh;
 }
 
 .contacto {
@@ -517,14 +551,19 @@ label {
   z-index: 999;
 }
 
-.overlay {
+.overlay, .overlay--featured {
   -webkit-transition: background-image 1 ease-out 0.2s;
   transition: background-image 1 ease-out 0.2s;
 }
 
-.box:hover > .overlay {
+.box:hover > .overlay, .box:hover > .overlay--featured {
   -webkit-animation: gradiente 1s ease-in .5s infinite alternate;
           animation: gradiente 1s ease-in .5s infinite alternate;
+}
+
+.box:hover > .overlay--featured {
+  -webkit-animation: gradiente--dos 1s ease-in .5s infinite alternate;
+          animation: gradiente--dos 1s ease-in .5s infinite alternate;
 }
 
 @-webkit-keyframes gradiente {
@@ -573,6 +612,52 @@ label {
   }
 }
 
+@-webkit-keyframes gradiente--dos {
+  0% {
+    background-image: -webkit-gradient(linear, left top, right top, from(rgba(46, 42, 54, 0.25)), color-stop(rgba(3, 222, 255, 0.25)), color-stop(rgba(3, 222, 255, 0.25)), to(rgba(3, 222, 255, 0.55)));
+    background-image: linear-gradient(to right, rgba(46, 42, 54, 0.25), rgba(3, 222, 255, 0.25), rgba(3, 222, 255, 0.25), rgba(3, 222, 255, 0.55));
+  }
+  25% {
+    background-image: -webkit-gradient(linear, left bottom, left top, from(rgba(46, 42, 54, 0.15)), color-stop(rgba(3, 222, 255, 0.25)), color-stop(rgba(3, 222, 255, 0.25)), to(rgba(3, 222, 255, 0.55)));
+    background-image: linear-gradient(to top, rgba(46, 42, 54, 0.15), rgba(3, 222, 255, 0.25), rgba(3, 222, 255, 0.25), rgba(3, 222, 255, 0.55));
+  }
+  50% {
+    background-image: -webkit-gradient(linear, right top, left top, from(rgba(3, 222, 255, 0.25)), color-stop(rgba(3, 222, 255, 0.25)), color-stop(rgba(3, 222, 255, 0.35)), to(rgba(3, 222, 255, 0.55)));
+    background-image: linear-gradient(to left, rgba(3, 222, 255, 0.25), rgba(3, 222, 255, 0.25), rgba(3, 222, 255, 0.35), rgba(3, 222, 255, 0.55));
+  }
+  75% {
+    background-image: -webkit-gradient(linear, left top, left bottom, from(rgba(3, 222, 255, 0.25)), color-stop(rgba(3, 222, 255, 0.35)), color-stop(rgba(3, 222, 255, 0.55)), to(rgba(3, 222, 255, 0.35)));
+    background-image: linear-gradient(to bottom, rgba(3, 222, 255, 0.25), rgba(3, 222, 255, 0.35), rgba(3, 222, 255, 0.55), rgba(3, 222, 255, 0.35));
+  }
+  100% {
+    background-image: -webkit-gradient(linear, left top, right top, from(rgba(3, 222, 255, 0.35)), color-stop(rgba(3, 222, 255, 0.55)), color-stop(rgba(3, 222, 255, 0.25)), to(rgba(0, 0, 0, 0.25)));
+    background-image: linear-gradient(to right, rgba(3, 222, 255, 0.35), rgba(3, 222, 255, 0.55), rgba(3, 222, 255, 0.25), rgba(0, 0, 0, 0.25));
+  }
+}
+
+@keyframes gradiente--dos {
+  0% {
+    background-image: -webkit-gradient(linear, left top, right top, from(rgba(46, 42, 54, 0.25)), color-stop(rgba(3, 222, 255, 0.25)), color-stop(rgba(3, 222, 255, 0.25)), to(rgba(3, 222, 255, 0.55)));
+    background-image: linear-gradient(to right, rgba(46, 42, 54, 0.25), rgba(3, 222, 255, 0.25), rgba(3, 222, 255, 0.25), rgba(3, 222, 255, 0.55));
+  }
+  25% {
+    background-image: -webkit-gradient(linear, left bottom, left top, from(rgba(46, 42, 54, 0.15)), color-stop(rgba(3, 222, 255, 0.25)), color-stop(rgba(3, 222, 255, 0.25)), to(rgba(3, 222, 255, 0.55)));
+    background-image: linear-gradient(to top, rgba(46, 42, 54, 0.15), rgba(3, 222, 255, 0.25), rgba(3, 222, 255, 0.25), rgba(3, 222, 255, 0.55));
+  }
+  50% {
+    background-image: -webkit-gradient(linear, right top, left top, from(rgba(3, 222, 255, 0.25)), color-stop(rgba(3, 222, 255, 0.25)), color-stop(rgba(3, 222, 255, 0.35)), to(rgba(3, 222, 255, 0.55)));
+    background-image: linear-gradient(to left, rgba(3, 222, 255, 0.25), rgba(3, 222, 255, 0.25), rgba(3, 222, 255, 0.35), rgba(3, 222, 255, 0.55));
+  }
+  75% {
+    background-image: -webkit-gradient(linear, left top, left bottom, from(rgba(3, 222, 255, 0.25)), color-stop(rgba(3, 222, 255, 0.35)), color-stop(rgba(3, 222, 255, 0.55)), to(rgba(3, 222, 255, 0.35)));
+    background-image: linear-gradient(to bottom, rgba(3, 222, 255, 0.25), rgba(3, 222, 255, 0.35), rgba(3, 222, 255, 0.55), rgba(3, 222, 255, 0.35));
+  }
+  100% {
+    background-image: -webkit-gradient(linear, left top, right top, from(rgba(3, 222, 255, 0.35)), color-stop(rgba(3, 222, 255, 0.55)), color-stop(rgba(3, 222, 255, 0.25)), to(rgba(0, 0, 0, 0.25)));
+    background-image: linear-gradient(to right, rgba(3, 222, 255, 0.35), rgba(3, 222, 255, 0.55), rgba(3, 222, 255, 0.25), rgba(0, 0, 0, 0.25));
+  }
+}
+
 .mobile {
   display: none;
 }
@@ -593,8 +678,7 @@ label {
         grid-template-columns: 1fr 1fr;
     -ms-grid-rows: 1fr .5fr;
         grid-template-rows: 1fr .5fr;
-        grid-template-areas: "vainillawp jamstackwp"
- "plugins meme";
+        grid-template-areas: "vainillawp jamstackwp" "plugins meme";
     -webkit-column-gap: 10px;
             column-gap: 10px;
     row-gap: 20px;
@@ -610,7 +694,7 @@ label {
     -o-object-fit: cover;
        object-fit: cover;
   }
-  .overlay {
+  .overlay, .overlay--featured {
     width: 300px;
     height: 150px;
   }
@@ -663,10 +747,7 @@ label {
         grid-template-columns: 1fr;
     -ms-grid-rows: auto;
         grid-template-rows: auto;
-        grid-template-areas: "vainillawp"
- "jamstackwp"
- "plugins"
- "meme";
+        grid-template-areas: "vainillawp" "jamstackwp" "plugins" "meme";
     row-gap: 10px;
     justify-items: center;
     -webkit-box-pack: center;
@@ -680,7 +761,7 @@ label {
     -o-object-fit: cover;
        object-fit: cover;
   }
-  .overlay {
+  .overlay, .overlay--featured {
     width: 300px;
     height: 150px;
   }
