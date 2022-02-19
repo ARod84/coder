@@ -2,8 +2,10 @@ $subtitle-vainilla: 800 24px/1.5 'Lato', sans-serif;
 
 /* Page wp vainilla */
 
-h2.sub-vainilla {
-    font: $subtitle-vainilla;
+.sub-vainilla {
+    h2 {
+        font: $subtitle-vainilla;
+    }
 }
 
 .carousel-indicators.outside {

@@ -1,5 +1,62 @@
 @charset "UTF-8";
 /* CSS AROD.com */
+.container-descargas {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: 33% 66%;
+      grid-template-columns: 33% 66%;
+  -ms-grid-rows: .75fr .25fr;
+      grid-template-rows: .75fr .25fr;
+      grid-template-areas: "titulo descripcion" "carrusel carrusel";
+  -webkit-box-align: start;
+      -ms-flex-align: start;
+          align-items: start;
+}
+
+.descargas-titulo {
+  -ms-grid-row: 1;
+  -ms-grid-column: 1;
+  grid-area: titulo;
+}
+
+.descargas-titulo img {
+  max-width: 100%;
+}
+
+.descargas-descripcion {
+  -ms-grid-row: 1;
+  -ms-grid-column: 2;
+  grid-area: descripcion;
+}
+
+.descargas-carrusel {
+  -ms-grid-row: 2;
+  -ms-grid-column: 1;
+  -ms-grid-column-span: 2;
+  grid-area: carrusel;
+}
+
+.descargas-carrusel button {
+  width: 5%;
+  background-color: transparent;
+  border: none;
+  outline: none;
+}
+
+.descargas-carrusel button .carousel-control-prev {
+  left: -100px;
+}
+
+.descargas-carrusel button .carousel-control-next {
+  right: -100px;
+}
+
+.descargas-carrusel .plugins-title {
+  position: absolute;
+  top: 1.5rem;
+  left: 2.5rem;
+}
+
 /* RESET */
 html, body, div, span, applet, object, iframe,
 h1, h2, h3, h4, h5, h6, p, blockquote, pre,
@@ -373,20 +430,6 @@ form {
 
 label {
   margin-bottom: 10px;
-}
-
-/* Descargas */
-.container-descargas {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-  height: 80vh;
 }
 
 /* Categoría page */

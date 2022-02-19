@@ -1,0 +1,41 @@
+.container-descargas {
+    display: grid;
+    grid-template-columns: 33% 66%;
+    grid-template-rows: .75fr .25fr;
+    grid-template-areas: 
+        "titulo descripcion"
+        "carrusel carrusel";
+    align-items: start;
+}
+
+.descargas-titulo {
+    grid-area: titulo;
+    img {
+        max-width: 100%;
+    }
+}
+
+.descargas-descripcion {
+    grid-area: descripcion;
+}
+
+.descargas-carrusel {
+    grid-area: carrusel;
+    button {
+        width: 5%;
+        background-color: transparent;
+        border: none;
+        outline: none;
+        .carousel-control-prev {
+            left: -100px;
+        }
+        .carousel-control-next {
+            right: -100px;
+        }
+    }
+    .plugins-title {
+        position: absolute;
+        top: 1.5rem;
+        left: 2.5rem;
+    }
+}

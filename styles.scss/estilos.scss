@@ -1,5 +1,5 @@
 /* CSS AROD.com */
-
+@import "descargas";
 /* RESET */
 html, body, div, span, applet, object, iframe,
 h1, h2, h3, h4, h5, h6, p, blockquote, pre,
@@ -349,14 +349,6 @@ form {
 label {
     margin-bottom: 10px;
 } 
-
-/* Descargas */
-.container-descargas {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    height: 80vh;
-}
 
 /* Categoría page */
 
