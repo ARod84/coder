@@ -19,10 +19,36 @@
             font-size: $fontSize1;
         }
         h2 {
+            font-size: $fontSize1;
+        }
+        h3 {
             font-size: $fontSize2;
         }
         img {
             margin-bottom: 1rem;
+        }
+        .btn {
+            font-size: .85rem;
+        }
+        .descarga {
+            margin-right: 10px;
+        }
+    }
+    .descargas-carrusel {
+        button {
+            width: 12%;
+            background-color: transparent;
+            border: none;
+            outline: none;
+        }
+        button.carousel-control-prev {
+            left: -10px;
+        }
+        button.carousel-control-next {
+            right: -10px;
+        }
+        .plugins-title {
+            font-size: 1.1rem;
         }
     }
 }
