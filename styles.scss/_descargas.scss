@@ -1,15 +1,58 @@
+/* Variables */
+
+$fontTitle: 'Lato', sans-serif;
+$fontSize1: 2.5rem;
+$fontSize2: 2rem;
+
+$bold: 700;
+$extraBold: 900;
+
 .container-descargas {
-    display: grid;
-    grid-template-columns: 33% 66%;
-    grid-template-rows: .75fr .25fr;
-    grid-template-areas: 
-        "titulo descripcion"
-        "carrusel carrusel";
-    align-items: start;
+    max-width: 90%;
+    margin: 2.5rem auto;
+    h1 {
+        font-family: $fontTitle;
+        font-weight: $extraBold;
+        font-size: $fontSize1;
+        line-height: 1.2em;
+    }
+    h2 {
+        font-family: $fontTitle;
+        font-weight: $extraBold;
+        font-size: $fontSize1;
+        line-height: 1.2em;
+    }
+    h3 {
+        font-family: $fontTitle;
+        font-weight: $bold;
+        font-size: $fontSize2;
+        line-height: 1.1em;
+    }
+    p {
+        margin-bottom: 1rem;
+    }
+    .btn {
+        font-weight: $extraBold;
+        border-radius: 2rem;
+        text-transform: uppercase;
+    }
+    .descarga {
+        background-color: #03DEFF;
+    }
+    .github {
+        background-color: #FF1C89;
+        background-image: url(../img/github.svg);
+        background-size: 1.5rem;
+        background-repeat: no-repeat;
+        background-position: 20px 12px;
+        padding-left: 50px;
+    }
 }
 
 .descargas-titulo {
     grid-area: titulo;
+    grid-column: 1;
+    grid-row: 1;
     img {
         max-width: 100%;
     }
@@ -17,21 +60,25 @@
 
 .descargas-descripcion {
     grid-area: descripcion;
+    grid-column: 2;
+    grid-row: 1;
 }
 
 .descargas-carrusel {
     grid-area: carrusel;
+    grid-column: 1 / span 2;
+    grid-row: 2;
     button {
         width: 5%;
         background-color: transparent;
         border: none;
         outline: none;
-        .carousel-control-prev {
-            left: -100px;
-        }
-        .carousel-control-next {
-            right: -100px;
-        }
+    }
+    button.carousel-control-prev {
+        left: -25px;
+    }
+    button.carousel-control-next {
+        right: -25px;
     }
     .plugins-title {
         position: absolute;

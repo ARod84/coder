@@ -1,22 +1,61 @@
 @charset "UTF-8";
 /* CSS AROD.com */
+/* Variables */
 .container-descargas {
-  display: -ms-grid;
-  display: grid;
-  -ms-grid-columns: 33% 66%;
-      grid-template-columns: 33% 66%;
-  -ms-grid-rows: .75fr .25fr;
-      grid-template-rows: .75fr .25fr;
-      grid-template-areas: "titulo descripcion" "carrusel carrusel";
-  -webkit-box-align: start;
-      -ms-flex-align: start;
-          align-items: start;
+  max-width: 90%;
+  margin: 2.5rem auto;
+}
+
+.container-descargas h1 {
+  font-family: "Lato", sans-serif;
+  font-weight: 900;
+  font-size: 2.5rem;
+  line-height: 1.2em;
+}
+
+.container-descargas h2 {
+  font-family: "Lato", sans-serif;
+  font-weight: 900;
+  font-size: 2.5rem;
+  line-height: 1.2em;
+}
+
+.container-descargas h3 {
+  font-family: "Lato", sans-serif;
+  font-weight: 700;
+  font-size: 2rem;
+  line-height: 1.1em;
+}
+
+.container-descargas p {
+  margin-bottom: 1rem;
+}
+
+.container-descargas .btn {
+  font-weight: 900;
+  border-radius: 2rem;
+  text-transform: uppercase;
+}
+
+.container-descargas .descarga {
+  background-color: #03DEFF;
+}
+
+.container-descargas .github {
+  background-color: #FF1C89;
+  background-image: url(../img/github.svg);
+  background-size: 1.5rem;
+  background-repeat: no-repeat;
+  background-position: 20px 12px;
+  padding-left: 50px;
 }
 
 .descargas-titulo {
-  -ms-grid-row: 1;
-  -ms-grid-column: 1;
   grid-area: titulo;
+  -ms-grid-column: 1;
+  grid-column: 1;
+  -ms-grid-row: 1;
+  grid-row: 1;
 }
 
 .descargas-titulo img {
@@ -24,16 +63,20 @@
 }
 
 .descargas-descripcion {
-  -ms-grid-row: 1;
-  -ms-grid-column: 2;
   grid-area: descripcion;
+  -ms-grid-column: 2;
+  grid-column: 2;
+  -ms-grid-row: 1;
+  grid-row: 1;
 }
 
 .descargas-carrusel {
-  -ms-grid-row: 2;
+  grid-area: carrusel;
   -ms-grid-column: 1;
   -ms-grid-column-span: 2;
-  grid-area: carrusel;
+  grid-column: 1 / span 2;
+  -ms-grid-row: 2;
+  grid-row: 2;
 }
 
 .descargas-carrusel button {
@@ -43,18 +86,42 @@
   outline: none;
 }
 
-.descargas-carrusel button .carousel-control-prev {
-  left: -100px;
+.descargas-carrusel button.carousel-control-prev {
+  left: -25px;
 }
 
-.descargas-carrusel button .carousel-control-next {
-  right: -100px;
+.descargas-carrusel button.carousel-control-next {
+  right: -25px;
 }
 
 .descargas-carrusel .plugins-title {
   position: absolute;
   top: 1.5rem;
   left: 2.5rem;
+}
+
+@media only screen and (max-width: 1024px) {
+  .container-descargas {
+    max-width: 95%;
+    margin: .5rem auto;
+  }
+  .container-descargas img {
+    width: 100%;
+    height: auto;
+  }
+}
+
+@media only screen and (max-width: 767px) {
+  /* Variables */
+  .container-descargas h1 {
+    font-size: 2rem;
+  }
+  .container-descargas h2 {
+    font-size: 1.5rem;
+  }
+  .container-descargas img {
+    margin-bottom: 1rem;
+  }
 }
 
 /* RESET */

@@ -1,0 +1,28 @@
+
+@media only screen and (max-width: 1024px) {
+    .container-descargas {
+        max-width: 95%;
+        margin: .5rem auto;
+        img {
+            width: 100%;
+            height: auto;
+        }
+    }
+}
+
+@media only screen and (max-width: 767px) {
+    /* Variables */ 
+    $fontSize1: 2rem;
+    $fontSize2: 1.5rem;
+    .container-descargas {
+        h1 {
+            font-size: $fontSize1;
+        }
+        h2 {
+            font-size: $fontSize2;
+        }
+        img {
+            margin-bottom: 1rem;
+        }
+    }
+}

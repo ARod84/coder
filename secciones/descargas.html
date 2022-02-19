@@ -104,35 +104,45 @@
     <!-- Inicio de main ---->
     <!---------------------->
     <main class="px-5">
-        <article class="container-descargas py-5">
-            <div class="descargas-titulo">
-                <h1>Plugin 1</h1>
-                <img src="../img/plugins.jpg" alt="Plugin ejemplo" width="550" height="350" />
-            </div>
-            <div class="descargas-descripcion">
-                <h2>Descripción</h2>
-                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed non leo libero. 
-                  Proin gravida ut eros quis fringilla. Nunc vitae purus ac massa vulputate euismod vitae 
-                  a tortor. Pellentesque habitant morbi tristique senectus et netus et malesuada fames 
-                  ac turpis egestas. Mauris mattis erat vel pharetra venenatis. Aliquam accumsan consectetur 
-                  lectus vel scelerisque. Etiam tincidunt sem vitae condimentum ornare. Vivamus vitae dapibus velit. 
-                  Suspendisse aliquam elit felis, ut tempus est consectetur ut. Aliquam a lacus arcu. Sed non scelerisque 
-                  enim. Sed tincidunt convallis ex sit amet porttitor. Pellentesque non efficitur quam. 
-                  Nam dictum et risus et aliquet.</p>
-                <p>Vestibulum quis mi in mauris pulvinar feugiat. Donec nunc turpis, vehicula in gravida
-                  a, blandit a lectus. Fusce rutrum in eros et imperdiet. Cras ullamcorper tellus urna, quis 
-                  placerat nisi sodales sed. Nam efficitur urna augue. Vivamus vel egestas lacus, vel efficitur quam. 
-                  Praesent ac eleifend leo. Ut vulputate felis id odio egestas, in sodales dolor tincidunt. 
-                  Mauris vel justo massa. Phasellus vel nisl non est blandit lobortis vel a orci. Etiam feugiat tellus 
-                  justo, vel ornare nisi rhoncus non. Etiam viverra euismod eleifend. Integer at dolor ac turpis hendrerit
-                  dapibus vitae suscipit ante. Donec porta aliquam est sed convallis.
-                </p>
+        <article class="container-descargas py-5 col-md-12">
+            <div class="row">
+                <div class="descargas-titulo col-md-4 col-sm-12 col-xs-12">
+                    <h1>Plugin 1</h1>
+                    <img src="../img/plugins.jpg" alt="Plugin ejemplo" width="550" height="350" />
+                </div>
+                <div class="descargas-descripcion col-md-8 col-sm-12 col-xs-12">
+                    <h2>Descripción</h2>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed non leo libero. 
+                      Proin gravida ut eros quis fringilla. Nunc vitae purus ac massa vulputate euismod vitae 
+                      a tortor. Pellentesque habitant morbi tristique senectus et netus et malesuada fames 
+                      ac turpis egestas. Mauris mattis erat vel pharetra venenatis. Aliquam accumsan consectetur 
+                      lectus vel scelerisque. Etiam tincidunt sem vitae condimentum ornare. Vivamus vitae dapibus velit. 
+                      Suspendisse aliquam elit felis, ut tempus est consectetur ut. Aliquam a lacus arcu. Sed non scelerisque 
+                      enim. Sed tincidunt convallis ex sit amet porttitor. Pellentesque non efficitur quam. 
+                      Nam dictum et risus et aliquet.</p>
+                    <p>Vestibulum quis mi in mauris pulvinar feugiat. Donec nunc turpis, vehicula in gravida
+                      a, blandit a lectus. Fusce rutrum in eros et imperdiet. Cras ullamcorper tellus urna, quis 
+                      placerat nisi sodales sed. Nam efficitur urna augue. Vivamus vel egestas lacus, vel efficitur quam. 
+                      Praesent ac eleifend leo. Ut vulputate felis id odio egestas, in sodales dolor tincidunt. 
+                      Mauris vel justo massa. Phasellus vel nisl non est blandit lobortis vel a orci. Etiam feugiat tellus 
+                      justo, vel ornare nisi rhoncus non. Etiam viverra euismod eleifend. Integer at dolor ac turpis hendrerit
+                      dapibus vitae suscipit ante. Donec porta aliquam est sed convallis.
+                    </p>
+                    <p>Proin sit amet arcu non dolor placerat dapibus iaculis in orci. Cras vestibulum orci eros. Vivamus ultricies 
+                      neque urna, sit amet sodales dolor rutrum a. Morbi ex massa, ullamcorper eget nibh a, finibus tristique justo. 
+                      Donec imperdiet interdum leo nec venenatis. Integer eget sollicitudin dui. Mauris vehicula, justo eget 
+                      ullamcorper fringilla, massa quam bibendum turpis, sed scelerisque libero nunc ornare dolor. Nam pharetra, 
+                      quam vitae rutrum placerat, diam turpis pellentesque augue, volutpat lacinia sem nibh nec ex. Phasellus ac mi 
+                      elementum felis vestibulum molestie.</p>
+                      <button class="btn descarga">Descargar</button>
+                      <button class="btn github">Ver repo</button>
+                </div>
             </div>
             <!------------------------------------>
             <!-- Inicio Carrusel Otros Plugins --->
             <!------------------------------------>
-            <div class="descargas-carrusel my-5">
-                <h2>Otros plugins</h2>
+            <div class="descargas-carrusel my-5 col-md-12 col-xs-12">
+                <h3>Otros plugins</h3>
                 <div id="carouselExampleIndicators" data-interval="false" class="carousel slide my-5" data-ride="carousel">
                     <ol class="carousel-indicators outside">
                     <li data-target="#carouselExampleIndicators" data-slide-to="0" class="active"></li>
@@ -144,27 +154,27 @@
                             <div class="d-flex">
                                 <a href="#" class="d-block col-md-2">
                                     <img src="../img/coder1.jpg" class="w-100" alt="Código binario">
-                                    <h3 class="plugins-title">Plugin 1</h3>
+                                    <span class="plugins-title">Plugin 1</span>
                                 </a>
                                 <a href="#" class="col-md-2 disabled no-mobile">
                                     <img src="../img/coder2.jpg" class="w-100" alt="Código binario">
-                                    <h3 class="plugins-title">Plugin 2</h3>
+                                    <span class="plugins-title">Plugin 2</span>
                                 </a>
                                 <a href="#" class="col-md-2 disabled no-mobile">
                                     <img src="../img/coder2.jpg" class="w-100" alt="Código binario">
-                                    <h3 class="plugins-title">Plugin 3</h3>
+                                    <span class="plugins-title">Plugin 3</span>
                                 </a>
                                 <a href="#" class="col-md-2 disabled no-mobile">
                                     <img src="../img/coder2.jpg" class="w-100" alt="Código binario">
-                                    <h3 class="plugins-title">Plugin 4</h3>
+                                    <span class="plugins-title">Plugin 4</span>
                                 </a>
                                 <a href="#" class="col-md-2 disabled no-mobile">
                                     <img src="../img/coder2.jpg" class="w-100" alt="Código binario">
-                                    <h3 class="plugins-title">Plugin 5</h3>
+                                    <span class="plugins-title">Plugin 5</span>
                                 </a>
                                 <a href="#" class="col-md-2 disabled no-mobile">
                                     <img src="../img/coder2.jpg" class="w-100" alt="Código binario">
-                                    <h3 class="plugins-title">Plugin 6</h3>
+                                    <span class="plugins-title">Plugin 6</span>
                                 </a>
                             </div>
                         </div>
@@ -172,27 +182,27 @@
                             <div class="d-flex">
                                 <a href="#" class="d-block col-md-2">
                                     <img src="../img/coder1.jpg" class="w-100" alt="Código binario">
-                                    <h3 class="plugins-title">Plugin 1</h3>
+                                    <span class="plugins-title">Plugin 1</span>
                                 </a>
                                 <a href="#" class="col-md-2 disabled no-mobile">
                                     <img src="../img/coder2.jpg" class="w-100" alt="Código binario">
-                                    <h3 class="plugins-title">Plugin 2</h3>
+                                    <span class="plugins-title">Plugin 2</span>
                                 </a>
                                 <a href="#" class="col-md-2 disabled no-mobile">
                                     <img src="../img/coder2.jpg" class="w-100" alt="Código binario">
-                                    <h3 class="plugins-title">Plugin 3</h3>
+                                    <span class="plugins-title">Plugin 3</span>
                                 </a>
                                 <a href="#" class="col-md-2 disabled no-mobile">
                                     <img src="../img/coder2.jpg" class="w-100" alt="Código binario">
-                                    <h3 class="plugins-title">Plugin 4</h3>
+                                    <span class="plugins-title">Plugin 4</span>
                                 </a>
                                 <a href="#" class="col-md-2 disabled no-mobile">
                                     <img src="../img/coder2.jpg" class="w-100" alt="Código binario">
-                                    <h3 class="plugins-title">Plugin 5</h3>
+                                    <span class="plugins-title">Plugin 5</span>
                                 </a>
                                 <a href="#" class="col-md-2 disabled no-mobile">
                                     <img src="../img/coder2.jpg" class="w-100" alt="Código binario">
-                                    <h3 class="plugins-title">Plugin 6</h3>
+                                    <span class="plugins-title">Plugin 6</span>
                                 </a>
                             </div>
                         </div>
@@ -200,27 +210,27 @@
                             <div class="d-flex">
                                 <a href="#" class="d-block col-md-2">
                                     <img src="../img/coder1.jpg" class="w-100" alt="Código binario">
-                                    <h3 class="plugins-title">Plugin 1</h3>
+                                    <span class="plugins-title">Plugin 1</span>
                                 </a>
                                 <a href="#" class="col-md-2 disabled no-mobile">
                                     <img src="../img/coder2.jpg" class="w-100" alt="Código binario">
-                                    <h3 class="plugins-title">Plugin 2</h3>
+                                    <span class="plugins-title">Plugin 2</span>
                                 </a>
                                 <a href="#" class="col-md-2 disabled no-mobile">
                                     <img src="../img/coder2.jpg" class="w-100" alt="Código binario">
-                                    <h3 class="plugins-title">Plugin 3</h3>
+                                    <span class="plugins-title">Plugin 3</span>
                                 </a>
                                 <a href="#" class="col-md-2 disabled no-mobile">
                                     <img src="../img/coder2.jpg" class="w-100" alt="Código binario">
-                                    <h3 class="plugins-title">Plugin 4</h3>
+                                    <span class="plugins-title">Plugin 4</span>
                                 </a>
                                 <a href="#" class="col-md-2 disabled no-mobile">
                                     <img src="../img/coder2.jpg" class="w-100" alt="Código binario">
-                                    <h3 class="plugins-title">Plugin 5</h3>
+                                    <span class="plugins-title">Plugin 5</span>
                                 </a>
                                 <a href="#" class="col-md-2 disabled no-mobile">
                                     <img src="../img/coder2.jpg" class="w-100" alt="Código binario">
-                                    <h3 class="plugins-title">Plugin 6</h3>
+                                    <span class="plugins-title">Plugin 6</span>
                                 </a>
                             </div>
                         </div>
