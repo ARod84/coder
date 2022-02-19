@@ -93,7 +93,7 @@
 
 @media only screen and (max-width: 1024px) {
   .container-descargas {
-    max-width: 95%;
+    max-width: 90%;
     margin: .5rem auto;
   }
   .container-descargas img {
