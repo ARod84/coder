@@ -1,4 +1,7 @@
 {
+  "name": "blogrodriguez1.8",
+  "description": "Sitio web personal",
+  "version": "1.8.0",
   "devDependencies": {
     "node-sass": "^7.0.1",
     "nodemon": "^2.0.15"
