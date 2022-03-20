@@ -222,13 +222,17 @@ body {
 }
 
 h1, h4, h5, h6 {
-  font-family: "Bakbak One", sans-serif;
+  font-family: "Nunito", sans-serif;
   color: #ffffff;
+}
+
+h1 {
+  font-weight: 700;
 }
 
 h2, h3 {
   font-family: "Nunito", sans-serif;
-  font-weight: 900;
+  font-weight: 700;
   color: #ffffff;
 }
 
@@ -240,14 +244,15 @@ a:active {
 }
 
 body {
-  background-color: #2E2A36;
+  background: #584f6a;
+  background: radial-gradient(circle, #584f6a 0%, #2e2a36 100%, #72658f 100%);
 }
 
 /* Header */
 header {
   background: #2e2a36;
-  background: -webkit-gradient(linear, left top, right top, color-stop(3%, #2e2a36), color-stop(34%, #716588), to(#33244f));
-  background: linear-gradient(90deg, #2e2a36 3%, #716588 34%, #33244f 100%);
+  background: -webkit-gradient(linear, left top, right top, color-stop(3%, #2e2a36), color-stop(34%, #584f6a), to(#33244f));
+  background: linear-gradient(90deg, #2e2a36 3%, #584f6a 34%, #33244f 100%);
 }
 
 .header {
@@ -297,12 +302,17 @@ header {
   fill: #ffffff;
 }
 
-.nav-header a {
+.logo a {
+  color: #ffffff;
+  font-weight: 900;
+}
+
+.navbar-nav a {
+  font-weight: 900;
   color: #ffffff;
 }
 
-.nav-header li {
-  font-weight: 900;
+.navbar-toggler-icon {
   color: #ffffff;
 }
 
@@ -469,8 +479,8 @@ h2 {
 /* Footer */
 footer {
   background: #2e2a36;
-  background: -webkit-gradient(linear, left top, right top, color-stop(3%, #2e2a36), color-stop(34%, #716588), to(#33244f));
-  background: linear-gradient(90deg, #2e2a36 3%, #716588 34%, #33244f 100%);
+  background: -webkit-gradient(linear, left top, right top, color-stop(3%, #2e2a36), color-stop(34%, #584f6a), to(#33244f));
+  background: linear-gradient(90deg, #2e2a36 3%, #584f6a 34%, #33244f 100%);
 }
 
 .footer {

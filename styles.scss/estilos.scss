@@ -57,7 +57,7 @@ table {
 
 /* Variables */
 
-$fontTitle: 'Bakbak One', sans-serif;
+$fontTitle: 'Nunito', sans-serif;
 $fontSubtitle: 'Nunito', sans-serif;
 
 $bold: 700;
@@ -100,9 +100,12 @@ h1, h4, h5, h6 {
     color: #ffffff;
 }
 
+h1 {
+    font-weight: $bold;
+}
 h2, h3 {
     font-family: $fontSubtitle;
-    font-weight: $extraBold;
+    font-weight: $bold;
     color: #ffffff;
 }
 
@@ -114,14 +117,15 @@ a:active {
 }
 
 body {
-    background-color: #2E2A36;
+    background: rgb(88,79,106);
+    background: radial-gradient(circle, rgba(88,79,106,1) 0%, rgba(46,42,54,1) 100%, rgba(114,101,143,1) 100%);
 }
 
 /* Header */
 
 header {
     background: rgb(46,42,54);
-    background: linear-gradient(90deg, rgba(46,42,54,1) 3%, rgba(113,101,136,1) 34%, rgba(51,36,79,1) 100%);
+    background: linear-gradient(90deg, rgba(46,42,54,1) 3%, rgba(88,79,106,1) 34%, rgba(51,36,79,1) 100%);
 }
 
 .header {
@@ -158,13 +162,19 @@ header {
     fill: #ffffff;
 }
 
-.nav-header a {
+.logo a {
+    color: #ffffff;
+    font-weight: $extraBold;
+}
+
+.navbar-nav a {
+    font-weight: $extraBold;
     color: #ffffff;
 }
 
-.nav-header li {
-    font-weight: 900;
+.navbar-toggler-icon {
     color: #ffffff;
+
 }
 
 /* Main */
@@ -314,7 +324,7 @@ h2 {
 
 footer {
     background: rgb(46,42,54);
-    background: linear-gradient(90deg, rgba(46,42,54,1) 3%, rgba(113,101,136,1) 34%, rgba(51,36,79,1) 100%);
+    background: linear-gradient(90deg, rgba(46,42,54,1) 3%, rgba(88,79,106,1) 34%, rgba(51,36,79,1) 100%);
 }
 
 .footer {
