@@ -7,21 +7,21 @@
 }
 
 .container-descargas h1 {
-  font-family: "Lato", sans-serif;
+  font-family: "Nunito", sans-serif;
   font-weight: 900;
   font-size: 2.5rem;
   line-height: 1.2em;
 }
 
 .container-descargas h2 {
-  font-family: "Lato", sans-serif;
+  font-family: "Nunito", sans-serif;
   font-weight: 900;
   font-size: 2.5rem;
   line-height: 1.2em;
 }
 
 .container-descargas h3 {
-  font-family: "Lato", sans-serif;
+  font-family: "Nunito", sans-serif;
   font-weight: 700;
   font-size: 2rem;
   line-height: 1.1em;
@@ -217,7 +217,7 @@ li,
 div,
 span,
 body {
-  font-family: 'Lato', sans-serif;
+  font-family: 'Nunito', sans-serif;
   color: #ffffff;
 }
 
@@ -227,7 +227,7 @@ h1, h4, h5, h6 {
 }
 
 h2, h3 {
-  font-family: "Lato", sans-serif;
+  font-family: "Nunito", sans-serif;
   font-weight: 900;
   color: #ffffff;
 }
@@ -244,6 +244,17 @@ body {
 }
 
 /* Header */
+header {
+  background: #2e2a36;
+  background: -webkit-gradient(linear, left top, right top, color-stop(3%, #2e2a36), color-stop(34%, #716588), to(#33244f));
+  background: linear-gradient(90deg, #2e2a36 3%, #716588 34%, #33244f 100%);
+}
+
+.header {
+  max-width: 80%;
+  margin: 0 auto;
+}
+
 .navHeader {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -364,8 +375,8 @@ h2 {
 }
 
 .boxHomeImg {
-  height: 200px;
-  width: 400px;
+  height: 20vh;
+  width: 20vw;
   -o-object-fit: cover;
      object-fit: cover;
   border-radius: 8px;
@@ -375,8 +386,8 @@ h2 {
   position: absolute;
   background: -webkit-gradient(linear, left top, right top, from(rgba(0, 0, 0, 0.8)), to(rgba(255, 27, 138, 0.25)));
   background: linear-gradient(to right, rgba(0, 0, 0, 0.8), rgba(255, 27, 138, 0.25));
-  height: 200px;
-  width: 400px;
+  height: 20vh;
+  width: 20vw;
   border-radius: 8px;
 }
 
@@ -392,7 +403,7 @@ h2 {
 }
 
 .memeImg {
-  width: 400px;
+  width: 20vw;
   height: auto;
 }
 
@@ -456,6 +467,17 @@ h2 {
 }
 
 /* Footer */
+footer {
+  background: #2e2a36;
+  background: -webkit-gradient(linear, left top, right top, color-stop(3%, #2e2a36), color-stop(34%, #716588), to(#33244f));
+  background: linear-gradient(90deg, #2e2a36 3%, #716588 34%, #33244f 100%);
+}
+
+.footer {
+  max-width: 80%;
+  margin: 0 auto;
+}
+
 .footerLogo svg {
   max-height: 120px;
   fill: #ffffff;
@@ -476,6 +498,10 @@ small {
   color: #ffffff;
   line-height: 24px;
   font-weight: 700;
+}
+
+.redes li {
+  text-align: right;
 }
 
 .redes li svg {
